@@ -6,12 +6,12 @@ const Bear = ({ state = 'idle' }) => {
 
   // Map states to image sources
   const images = {
-    idle: '/bear_idle_1764444049947_nobg.png',
-    walking: '/bear_idle_1764444049947_nobg.png',
-    happy: '/bear_happy_1764444072743_nobg.png',
-    sad: '/bear_sad_1764444095714_nobg.png',
-    crying: '/bear_sad_1764444095714_nobg.png',
-    holdingHeart: '/bear_holding_heart_1764444112445_nobg.png',
+    idle: `${import.meta.env.BASE_URL}bear_idle_1764444049947_nobg.png`,
+    walking: `${import.meta.env.BASE_URL}bear_idle_1764444049947_nobg.png`,
+    happy: `${import.meta.env.BASE_URL}bear_happy_1764444072743_nobg.png`,
+    sad: `${import.meta.env.BASE_URL}bear_sad_1764444095714_nobg.png`,
+    crying: `${import.meta.env.BASE_URL}bear_sad_1764444095714_nobg.png`,
+    holdingHeart: `${import.meta.env.BASE_URL}bear_holding_heart_1764444112445_nobg.png`,
   };
 
   useEffect(() => {
